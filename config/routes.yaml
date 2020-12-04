@@ -1,0 +1,22 @@
+# This file is the entry point to configure your own HTTP routes.
+# Files in the routes/ subdirectory configure the routes for your dependencies.
+
+index:
+   path: /
+   defaults: { _controller: 'App\Controller\HomeController::index' }
+
+students:
+   path: /students
+   defaults: { _controller: 'App\Controller\StudentController::index' }
+
+contact:
+   path: /contact
+   defaults: { _controller: 'App\Controller\ContactController::index' }
+
+courses:
+   path: /courses
+   defaults: { _controller: 'App\Controller\CourseController::index' }
+
+events:
+   path: /events
+   defaults: { _controller: 'App\Controller\EventController::index' }
